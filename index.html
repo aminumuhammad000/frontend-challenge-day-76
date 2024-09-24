@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Day_76 Challange</title>
+</head>
+<body>
+  <div class="side">
+    <ul class="menu-list">
+      <li><a href="#">E-Book</a></li>
+      <li><a href="#">AudioBook</a></li>
+      <li><a href="#">Apps&Readers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <section>
+
+    <header>
+        <nav>
+          <div class="logo">BookByte</div>
+
+          <div class="navigation">
+          <ul>
+            <li><a href="#">E-Book</a></li>
+            <li><a href="#">AudioBook</a></li>
+            <li><a href="#">Apps&Readers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="register">
+            <button id="sign-in">Sign in</button>
+            <button id="try-for-free" class="action">Try for Free</button>
+          </div>
+          
+        </div>
+        <button class="toggle">menu</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <h1 id="title">Listen to Audiobooks For</h1>
+            <h1 id="free"><b>14 days for free</b></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Nostrum corporis eum cum tempora minus, 
+              maxime animi! Saepe reprehenderit impedit non.
+              <span>%17.99/month.</span>
+            <span>you can cancel at any time.</span></p>
+
+            <div class="view-container">
+              <button class="action">Try For Free</button>
+              <button>View Category</button>
+            </div>
+        </div>
+
+        <div class="book-container">
+          <div class="title">
+            <h2>Todays Hits</h2>
+            <button>View All</button>
+          </div>
+
+          <div class="book-list-conatiner">
+
+            <!-- card start here...  -->
+              <div class="card">
+                <img src="images/book1.jpg" alt="">
+                <div class="details">
+                  <p id="title">Book Name</p>
+                  <p id="author">aminu amee</p>
+                </div>
+              </div>
+              <!-- card end here.....  -->
+
+                <!-- card start here...  -->
+                <div class="card">
+                  <img src="images/book1.jpg" alt="">
+                  <div class="details">
+                    <p id="title">Book Name</p>
+                    <p id="author">aminu amee</p>
+                  </div>
+                </div>
+                <!-- card end here.....  -->
+
+                  <!-- card start here...  -->
+              <div class="card">
+                <img src="images/book1.jpg" alt="">
+                <div class="details">
+                  <p id="title">Book Name</p>
+                  <p id="author">aminu amee</p>
+                </div>
+              </div>
+              <!-- card end here.....  -->
+
+                <!-- card start here...  -->
+                <div class="card">
+                  <img src="images/book1.jpg" alt="">
+                  <div class="details">
+                    <p id="title">Book Name</p>
+                    <p id="author">aminu amee</p>
+                  </div>
+                </div>
+                <!-- card end here.....  -->
+
+                  <!-- card start here...  -->
+              <div class="card">
+                <img src="images/book1.jpg" alt="">
+                <div class="details">
+                  <p id="title">Book Name</p>
+                  <p id="author">aminu amee</p>
+                </div>
+              </div>
+              <!-- card end here.....  -->
+
+                <!-- card start here...  -->
+                <div class="card">
+                  <img src="images/book1.jpg" alt="">
+                  <div class="details">
+                    <p id="title">Book Name</p>
+                    <p id="author">aminu amee</p>
+                  </div>
+                </div>
+                <!-- card end here.....  -->
+
+                  <!-- card start here...  -->
+              <div class="card">
+                <img src="images/book1.jpg" alt="">
+                <div class="details">
+                  <p id="title">Book Name</p>
+                  <p id="author">aminu amee</p>
+                </div>
+              </div>
+              <!-- card end here.....  -->
+
+                <!-- card start here...  -->
+                <div class="card">
+                  <img src="images/book1.jpg" alt="">
+                  <div class="details">
+                    <p id="title">Book Name</p>
+                    <p id="author">aminu amee</p>
+                  </div>
+                </div>
+                <!-- card end here.....  -->
+
+          </div>
+        </div>
+    </main>
+  </section>
+
+  <script>
+    const menu = document.querySelector('.toggle')
+const side = document.querySelector('.side')
+
+menu.addEventListener('click', (e) => {
+    side.classList.toggle('active')
+    if(side.classList.contains('active')){
+        menu.style.color = '#fff'
+        menu.textContent = 'close'
+        // document.body.backgroundColor = 'red'
+    }
+    else{
+        menu.style.color = '#000'
+        menu.textContent = 'menu'
+    }
+})
+  </script>
+</body>
+</html>
