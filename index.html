@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>Day_76 Challange</title>
 </head>
@@ -156,12 +157,12 @@ menu.addEventListener('click', (e) => {
     side.classList.toggle('active')
     if(side.classList.contains('active')){
         menu.style.color = '#fff'
-        menu.textContent = 'close'
+        menu.innerHTML = '<i class="fa-solid fa-x"></i>'
         // document.body.backgroundColor = 'red'
     }
     else{
         menu.style.color = '#000'
-        menu.textContent = 'menu'
+        menu.innerHTML = '<i class="fa-solid fa-bars"></i>'
     }
 })
   </script>
